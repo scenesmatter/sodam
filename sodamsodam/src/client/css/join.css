@@ -1,0 +1,154 @@
+.joinContainerWrap {
+    width: 100%;
+    height: 100vh;
+    min-height: 100%;
+    position: relative;
+}
+
+/* .joinHeader */
+.joinHeader {
+    width: 90%;
+    height: 80px;
+    position: absolute;
+    z-index: 9999;
+    left: 5%;
+    right: 5%;
+    top: 0;
+    display: flex;
+    align-items: center;
+}
+
+.joinBackBtn {
+    width: 32px;
+    height: 32px;
+}
+
+.joinBackBtn > .svgBox {
+    width: 32px;
+    height: 32px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 0;
+}
+
+/* .joinContents */
+.joinContents {
+    width: 100%;
+    height: 100%;
+}
+
+.joinContentsWrap {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .joinLogo */
+.joinLogo {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 28%;
+    transform: translate(-50%, -28%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.joinSimbol > svg .st0 {
+    fill: none;
+    stroke: #F9E532;
+    stroke-width: 18;
+    stroke-miterlimit: 10;
+}
+
+.joinSimbol {
+    width: 64px;
+}
+
+.joinSimbol > svg .st1 {
+    fill: none;
+    stroke: #E52538;    
+    stroke-width: 20;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.joinSimbol > svg .st2 {
+    fill: #E52538;
+}
+
+.joinTitle {
+    margin-block: 8px 16px;
+}
+
+.joinTitle > ul > li {
+    font-family: 'TTtogether';
+    font-weight: lighter;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.joinTitle > ul > li:first-of-type {
+    margin-bottom: 2px;
+}
+
+.joinTitle > ul > li > span {
+    font-family: 'TTtogether';
+    font-weight: lighter;
+    font-size: 2rem;
+    color: #e52538;
+}
+
+.joinTxt > p {
+    font-family: 'Pretendard-SemiBold';
+    color: #666;
+}
+
+/* #joinForm */
+#joinForm {
+    width: 224px;
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+}
+
+#joinForm > * {
+    height: 52px;
+}
+
+#joinForm > input {
+    padding-inline: 16px;
+    border: 1px solid #ccc;
+}
+
+#joinForm > input:nth-of-type(2) {
+    margin-block: 12px;
+}
+
+#joinForm > a {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E52538;
+    border: 1px solid #e52538;
+    font-family: 'Pretendard-ExtraBold';
+    color: white;
+}
+
+@media screen and (min-width: 360px) {
+    /* .joinContents */
+    #joinForm {
+        width: 288px;
+    } 
+}
+

@@ -1,0 +1,21 @@
+<%-include('../components/head.ejs') %>
+
+    <!-- map css -->
+    <link rel="stylesheet" type="text/css" href="/client/css/map.css"/>
+
+    <!-- map js -->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=1a0b9adf356fd494ac95b87c512c1a53"></script>
+    <script src="/client/js/map.js" defer></script>
+</head>
+
+<body>
+    <section id="filter">
+      <div class="category on" data-category="interior"> 인테리어 </div>
+      <div class="category" data-category="stationery"> 문구사무 </div>
+      <div class="category" data-category="fashion"> 패션잡화 </div>
+      <div class="category" data-category="grocery"> 식료품 </div>
+    </section>
+  
+    <div id="map"></div>
+
+<%-include('../components/nav.ejs') %>

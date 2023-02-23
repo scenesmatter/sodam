@@ -1,0 +1,20 @@
+<%-include('../components/head.ejs') %>
+    
+    <!-- qr css -->
+    <link rel="stylesheet" href="/client/css/qr.css">
+
+    <!-- qr js -->
+    <script src="/client/library/jsQR.js" defer></script>
+    <script src="/client/js/qr.js" defer></script>
+</head>
+<body>
+    <div class="content-container">
+        <div class="qr-container">
+            <p class="wait-text">화면을 인식중입니다.</p>
+        </div>
+        <div class="canvas-wrap">
+            <canvas id="canvas" width="400" height="400"></canvas>
+        </div>
+    </div>
+
+<%-include('../components/nav.ejs') %>

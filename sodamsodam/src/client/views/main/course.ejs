@@ -1,0 +1,103 @@
+<%-include('../components/head.ejs') %>
+
+    <!-- course css -->
+    <link rel="stylesheet" href="/client/css/course.css">
+
+</head>
+
+<body class="body">
+    <div class="container">
+        <header>
+            <div class="headerWrap wrap">
+                <div class="headerTop">
+                    <div class="headerLogo">
+                        <ul>
+                            <li>
+                                <button class="svgBox" type="button" onClick="location.href='/'">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path fill="none" d="M0 0h24v24H0z"/>
+                                        <path d="M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414z"/>
+                                    </svg>
+                                </button>
+                            </li>
+                            <li>
+                                경로
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="headerBtn">
+                        <ul>
+                            <li>
+                                <button type="button" class="couponBtn">
+                                    <i class="ri-coupon-2-fill"></i>
+                                </button>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="ri-user-5-fill"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="headerBottom">
+                    <a class="sodamCoursePlusBtn" href="#">
+                        <p>
+                            <span>New</span> 경로 만들기
+                        </p>
+                        <i class="ri-add-circle-fill"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <div class="contents">
+            <section id="courseGather" class="wrap">
+                <div class="secTitle">
+                    <h2>
+                        My경로
+                    </h2>
+                </div>
+                <div class="secContents">
+                    <ul>
+                        <li class="courseItem">
+                            <a class="courseItemMove" href="#">
+                                소담 경로 3
+                            </a>
+                            <button class="courseItemDelBtn" type="button">
+                                <i class="ri-delete-bin-fill"></i>
+                            </button>
+                        </li>
+                        <li class="courseItem">
+                            <a class="courseItemMove" href="#">
+                                소담 경로 2
+                            </a>
+                            <button class="courseItemDelBtn" type="button">
+                                <i class="ri-delete-bin-fill"></i>
+                            </button>
+                        </li>
+                        <li class="courseItem">
+                            <a class="courseItemMove" href="#">
+                                소담 경로 1
+                            </a>
+                            <button class="courseItemDelBtn" type="button">
+                                <i class="ri-delete-bin-fill"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+    <%-include('../sub/coupon.ejs') %>
+    <script>
+        $('.couponBtn').click(function(){
+            $('.couponContainer').addClass('couponPageOn');
+            $('.body').addClass('scrollLock');
+        });
+        
+        $('.couponPageCloseBtn').click(function(){
+            $('.couponContainer').removeClass('couponPageOn');
+            $('.body').removeClass('scrollLock');
+        });
+    </script>
+<%-include('../components/nav.ejs') %>

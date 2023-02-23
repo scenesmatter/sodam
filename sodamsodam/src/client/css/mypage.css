@@ -1,0 +1,226 @@
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollLock {
+    overflow: hidden;
+}
+
+.container {
+    min-height: 100%;
+    background: linear-gradient(180deg, #FF4848, #F55050, #e52538);
+}
+
+header {
+    height: 160px;
+    background: linear-gradient(0deg, #FF4848 16%, #F55050 32%, #e52538 64%);
+}
+
+header > .headerWrap {
+    height: 100%;
+}
+
+/* .headerTop */
+.headerTop {
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .headerLogo */
+.headerLogo > ul {
+    display: flex;
+    align-items: center;
+}
+
+.headerLogo > ul > li > .svgBox {
+    width: 32px;
+    height: 32px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 0;
+}
+
+.headerLogo > ul > li > .svgBox > svg {
+    width: 24px;
+    height: 24px;
+    fill: white;
+}
+
+.headerLogo > ul > li:last-of-type {
+    padding-left: 8px;
+    font-family: 'Pretendard-SemiBold';
+    font-size: 1.25rem;
+    color: white;
+}
+
+/* .headerBottom */
+.headerBottom {
+    height: 50%;
+}
+
+/* .sodamProfile */
+.sodamProfile {
+    width: 100%;
+    padding: 16px;
+    background-color: white;
+    box-shadow: 0 0 4px 4px #e5253899;
+    border-radius: 8px;
+    border: 0;
+}
+
+.sodamProfile > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* #sodamUser */
+#sodamUser {
+    width: 70%;
+}
+
+#sodamUser > ul {
+    display: flex;
+    align-items: center;
+}
+
+#sodamUser > ul > li:first-of-type {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    border: 1px solid #e52538;;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sodamUser > ul > li > i {
+    font-size: 1.25rem;
+    color: #e52538;;
+}
+
+#sodamUser > ul > li:last-of-type {
+    color: #333;
+}
+
+#sodamUserName {
+    font-family: 'Pretendard-ExtraBold';
+    font-size: 1.125rem;
+    color: #333;
+}
+
+/* #sodamLogoutBtn */
+.sodamProfile > ul > li:nth-of-type(2) {
+    width: 30%;
+    display: flex;
+    justify-content: right;
+}
+
+#sodamLogoutBtn {
+    padding: 4px 8px;
+    background-color: unset;
+    border: 0;
+    border: 1px solid #e52538;
+    border-radius: 24px;
+    font-size: 0.875rem;
+    color: #e52538;
+}
+
+/* .contents */
+.contents {
+    min-width: 100%;
+    padding-bottom: 96px;
+    background-color: white;
+    border-radius: 24px 24px 0 0;
+}
+
+/* #mypageCoupon */
+#mypageCoupon {
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 1px solid #ccc;
+}
+
+#mypageCoupon > .secContents > button {
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    text-align: left;
+}
+
+#mypageCoupon > .secContents > button > ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.MypageCouponSmallTxt > li:first-of-type {
+    margin-bottom: 4px;
+    font-family: 'Pretendard-ExtraBold';
+    font-size: 1.125rem;
+    color: #333;
+}
+
+.MypageCouponSmallTxt > li:last-of-type {
+    font-size: 0.875rem;
+    color: #666;
+}
+
+#mypageCoupon > .secContents > button > ul > li:last-of-type {
+    color: #666;
+}
+
+#mypageCoupon > .secContents > button > ul > li:last-of-type > span {
+    margin: 0;
+    padding-inline: 4px;
+    font-family: 'TTtogether';
+    font-weight: lighter;
+    font-size: 2.5rem;
+    color: #e52538;
+}
+
+/* #mypageNav */
+#mypageNav > ul > li {
+    padding-block: 16px 8px;
+}
+
+#mypageNav > ul > li > a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#mypageNav > ul > li > a > p {
+    font-family: 'Pretendard-ExtraBold';
+    font-size: 1.125rem;
+    color: #333;
+}
+
+#mypageNav > ul > li > a > .svgBox {
+    width: 32px;
+    height: 32px;
+}
+
+#mypageNav > ul > li > a > .svgBox > svg {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: #666;
+}
+
+#mypageNav > ul > li > a > p:nth-of-type(2) {
+    font-family: 'Pretendard-Regular';
+    font-size: 1rem;
+    color: #666;
+}

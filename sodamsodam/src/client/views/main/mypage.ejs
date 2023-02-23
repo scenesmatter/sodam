@@ -1,0 +1,150 @@
+<%-include('../components/head.ejs') %>
+
+    <!-- mypage css -->
+    <link rel="stylesheet" href="/client/css/mypage.css">
+
+    <!-- mypage js -->
+    <script src="/client/js/mypage.js" defer></script>
+
+</head>
+
+<body class="body">
+    <div class="container">
+        <header>
+            <div class="headerWrap wrap">
+                <div class="headerTop">
+                    <div class="headerLogo">
+                        <ul>
+                            <li>
+                                <button class="svgBox" type="button" onClick="location.href='/'">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path fill="none" d="M0 0h24v24H0z"/>
+                                        <path d="M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414z"/>
+                                    </svg>
+                                </button>
+                            </li>
+                            <li>
+                                My소담
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="headerBottom">
+                    <div class="sodamProfile">
+                        <ul>
+                            <li id="sodamUser">
+                                <ul>
+                                    <li id="sodamUserPhoto">
+                                        <i class="ri-chat-smile-2-fill"></i>
+                                    </li>
+                                    <li>
+                                        안녕하세요, <span id="sodamUserName">소다미</span> 님!
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <button id="sodamLogoutBtn" class="mypageBtn" type="button">
+                                    로그아웃
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="contents">
+            <section id="mypageCoupon">
+                <div class="secTitle">
+                    <h2>
+                        My쿠폰함
+                    </h2>
+                </div>
+                <div class="secContents">
+                    <button type="button" class="couponBtn">
+                        <ul>
+                            <li>
+                                <ul class="MypageCouponSmallTxt">
+                                    <li>
+                                        사용 가능한 쿠폰
+                                    </li>
+                                    <li>
+                                        사용 가능한 쿠폰이 없습니다
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span>0</span>장
+                            </li>
+                        </ul>
+                    </button>
+                </div>
+            </section>
+            <nav id="mypageNav" class="wrap">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <p>
+                                공지사항
+                            </p>
+                            <div class="svgBox">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path fill="none" d="M0 0h24v24H0z"/>
+                                    <path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"/>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>
+                                고객센터
+                            </p>
+                            <div class="svgBox">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path fill="none" d="M0 0h24v24H0z"/>
+                                    <path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"/>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>
+                                환경설정
+                            </p>
+                            <div class="svgBox">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path fill="none" d="M0 0h24v24H0z"/>
+                                    <path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"/>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>
+                                버전정보
+                            </p>
+                            <p>
+                                현재 버전 1.0.1
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <%-include('../sub/coupon.ejs') %>
+    <script>
+        $('.couponBtn').click(function(){
+            $('.couponContainer').addClass('couponPageOn');
+            $('.body').addClass('scrollLock');
+        });
+        
+        $('.couponPageCloseBtn').click(function(){
+            $('.couponContainer').removeClass('couponPageOn');
+            $('.body').removeClass('scrollLock');
+        });
+    </script>
+
+<%-include('../components/nav.ejs') %>

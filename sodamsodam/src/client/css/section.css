@@ -1,0 +1,10 @@
+section {
+    padding-block: 32px;
+}
+
+section > .secTitle > h2 {
+    margin-bottom: 24px;
+    font-family: 'Pretendard-ExtraBold';
+    font-size: 0.875rem;
+    color: #666;
+}
